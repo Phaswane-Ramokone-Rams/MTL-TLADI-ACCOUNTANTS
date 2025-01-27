@@ -8,20 +8,16 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-.img-logo{
+
+.img-logo {
     cursor: pointer;
     width: 220px;
     height: 160px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0 1rem;
- 
-    
 }
 
 .container {
@@ -40,15 +36,13 @@ header {
 header h1 {
     text-align: center;
 }
-nav ul li a{
-    
+nav ul li a {
     transition: transform 0.3s ease;
-    
 }
 
 nav ul li a:hover {
     transform: scale(1.1);
-    color: rgb(49, 175, 233) ;
+    color: rgb(49, 175, 233);
 }
 
 nav ul {
@@ -66,15 +60,11 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-nav ul li a{
-    transition: transform 0.3s ease;
-    
-}
 
 nav ul li a:hover {
     transform: scale(2.2);
-
 }
+
 .hero {
     background: #f4f4f4;
     padding: 2rem 0;
@@ -99,17 +89,19 @@ h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 h3 {
     text-align: center;
     margin-bottom: 1rem;
 }
-p{
+
+p {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    
 }
-.hero li a{
+
+.hero li a {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -119,6 +111,7 @@ p{
     display: flex;
     justify-content: space-around;
 }
+
 .container .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -126,8 +119,8 @@ p{
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    
 }
+
 .service {
     flex: 1;
     padding: 1rem;
@@ -135,13 +128,13 @@ p{
     background: #f4f4f4;
     border-radius: 5px;
     cursor: pointer;
-transition: 0.5;
+    transition: 0.5s;
 }
 
-
-.service:hover{
-box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+.service:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+
 footer {
     background: #333;
     color: #fff;
@@ -149,6 +142,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 .social-media-icons {
     font-family: Arial, sans-serif;
     display: flex;
@@ -161,12 +155,66 @@ footer {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .social-media-icons a img:hover {
     transform: scale(1.1);
+}
+
+/* Responsive design with media queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .img-logo {
+        width: 180px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .service {
+        width: 90%;
+    }
+
+    .social-media-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }

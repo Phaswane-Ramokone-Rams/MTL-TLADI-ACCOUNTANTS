@@ -8,20 +8,16 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-.img-logo{
+
+.img-logo {
     cursor: pointer;
     width: 220px;
     height: 160px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0 1rem;
- 
-    
 }
 
 .container {
@@ -37,18 +33,18 @@ header {
     background-size: cover;
     background-position: center;
 }
+
 header h1 {
     text-align: center;
 }
-nav ul li a{
-    
+
+nav ul li a {
     transition: transform 0.3s ease;
-    
 }
 
 nav ul li a:hover {
     transform: scale(1.1);
-    color: rgb(49, 175, 233) ;
+    color: rgb(49, 175, 233);
 }
 
 nav ul {
@@ -66,14 +62,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-nav ul li a{
-    transition: transform 0.3s ease;
-    
-}
 
 nav ul li a:hover {
     transform: scale(2.2);
-
 }
 
 #contact form {
@@ -82,18 +73,20 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
 }
+
 h2 {
     text-align: center;
     margin-bottom: 1rem;
     padding-top: 20px;
-    color:rgb(49, 175, 233);
+    color: rgb(49, 175, 233);
 }
 
 #contact label {
     margin-top: 1rem;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
     padding: 0.5rem;
     margin-top: 0.5rem;
     border: 1px solid #ccc;
@@ -103,51 +96,47 @@ h2 {
 #contact button {
     margin-top: 1rem;
     padding: 0.5rem;
-   
-}
-.button1{
-    background: #333;
-    color: white;             /* Text color */
-    border: none;             /* Remove border */
-    padding: 10px 20px;       /* Button size */
-    font-size: 1.2rem;        /* Font size */
-    border-radius: 5px;       /* Rounded corners */
-    cursor: pointer;          /* Pointer on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
+.button1 {
+    background: #333;
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button size */
+    font-size: 1.2rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
 .button1:hover {
-    background-color:  rgb(49, 175, 233) ; /* Hover background color */
-   
-  }
+    background-color: rgb(49, 175, 233); /* Hover background color */
+}
 
 .icon-container {
     display: flex;
     gap: 20px;
     padding-top: 20px;
     padding-left: 600px;
-  }
-  
-  .icon {
+}
+
+.icon {
     text-decoration: none;
     font-size: 2.5rem;
     transition: transform 0.3s ease;
-  }
-  
-  .icon:hover {
+}
+
+.icon:hover {
     transform: rotate(10deg) scale(1.1);
-  }
-  
-  .icon.phone {
+}
+
+.icon.phone {
     color: #28a745;
-  }
-  
-  .icon.email {
+}
+
+.icon.email {
     color: #dc3545;
-  }
-
-
+}
 
 footer {
     background: #333;
@@ -156,6 +145,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 .social-media-icons {
     font-family: Arial, sans-serif;
     display: flex;
@@ -168,12 +158,124 @@ footer {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .social-media-icons a img:hover {
     transform: scale(1.1);
+}
+
+/* Responsive design with media queries */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .img-logo {
+        width: 200px;
+        height: 140px;
+    }
+
+    .icon-container {
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .social-media-icons a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .social-media-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
 }
